@@ -31,7 +31,6 @@ margin_bottom = 88.0
 text = "Quit"
 
 [node name="HowToPlayMessage" type="Label" parent="."]
-visible = false
 margin_left = 64.0
 margin_top = 128.0
 margin_right = 512.0
