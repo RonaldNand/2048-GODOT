@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AurorabyLukeBergs.mp3-bca16ac172daf1464e2e140d193e3329.mp3str"
+
+[deps]
+
+source_file="res://Art/BGAudio/AurorabyLukeBergs.mp3"
+dest_files=[ "res://.import/AurorabyLukeBergs.mp3-bca16ac172daf1464e2e140d193e3329.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

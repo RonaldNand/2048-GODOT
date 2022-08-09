@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cell.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GameUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Grid.gd" type="Script" id=3]
+
+[node name="Grid" type="Node2D"]
+script = ExtResource( 3 )
+cell = ExtResource( 1 )
+length = 18
+
+[node name="GameUI" parent="." instance=ExtResource( 2 )]
+pause_mode = 2
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="."]
+bus = "SFX"
+
+[connection signal="MainMenu" from="GameUI" to="." method="_on_GameUI_MainMenu"]
+[connection signal="resetGame" from="GameUI" to="." method="_on_GameUI_resetGame"]

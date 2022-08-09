@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BetOnItSilent%20Partner.mp3-e55ba8385539ccc044f505db943b58a6.mp3str"
+
+[deps]
+
+source_file="res://Art/BGAudio/BetOnItSilent%20Partner.mp3"
+dest_files=[ "res://.import/BetOnItSilent%20Partner.mp3-e55ba8385539ccc044f505db943b58a6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

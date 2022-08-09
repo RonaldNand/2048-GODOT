@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MorningRainbyLukrembo.mp3-951666375675d061d7f67aac9e6371a3.mp3str"
+
+[deps]
+
+source_file="res://Art/BGAudio/MorningRainbyLukrembo.mp3"
+dest_files=[ "res://.import/MorningRainbyLukrembo.mp3-951666375675d061d7f67aac9e6371a3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

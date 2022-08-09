@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Grid.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LevelSelectButton.tscn" type="PackedScene" id=3]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource( 1 )
+grid = ExtResource( 2 )
+button = ExtResource( 3 )
+
+[node name="How to Play" type="Button" parent="."]
+margin_left = 40.0
+margin_top = 32.0
+margin_right = 168.0
+margin_bottom = 88.0
+text = "How to Play"
+
+[node name="Play" type="Button" parent="."]
+margin_left = 240.0
+margin_top = 32.0
+margin_right = 368.0
+margin_bottom = 88.0
+text = "Play"
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 432.0
+margin_top = 32.0
+margin_right = 560.0
+margin_bottom = 88.0
+text = "Quit"
+
+[node name="HowToPlayMessage" type="Label" parent="."]
+visible = false
+margin_left = 64.0
+margin_top = 128.0
+margin_right = 512.0
+margin_bottom = 960.0
+text = "How to Play:
+
+Press W/A/S/D or Left/Right/Up/Down  to move the numbers on the GRID in that direction.
+
+Numbers will COMBINE if they are equal.
+
+Keep combining numbers to increase your SCORE.
+
+After every move TWO new numbers will appear on the grid. 
+
+If you can't make any moves you'll have to start over.
+
+See if you can reach 2048!
+
+Good Luck!
+
+"
+autowrap = true
+
+[connection signal="pressed" from="How to Play" to="." method="_on_How_to_Play_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

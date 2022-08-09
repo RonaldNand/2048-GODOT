@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TropicsbyScandinavianz.mp3-697a0eaac05e01aac27333e08fb0f4a2.mp3str"
+
+[deps]
+
+source_file="res://Art/BGAudio/TropicsbyScandinavianz.mp3"
+dest_files=[ "res://.import/TropicsbyScandinavianz.mp3-697a0eaac05e01aac27333e08fb0f4a2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

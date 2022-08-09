@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ChillVibesbyPufino.mp3-b245f0162a9539bd2be71ff599d7e646.mp3str"
+
+[deps]
+
+source_file="res://Art/BGAudio/ChillVibesbyPufino.mp3"
+dest_files=[ "res://.import/ChillVibesbyPufino.mp3-b245f0162a9539bd2be71ff599d7e646.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

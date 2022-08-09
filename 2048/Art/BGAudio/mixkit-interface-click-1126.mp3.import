@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mixkit-interface-click-1126.mp3-c4094a62584cfc9c6e2d37de70171bfc.mp3str"
+
+[deps]
+
+source_file="res://Art/BGAudio/mixkit-interface-click-1126.mp3"
+dest_files=[ "res://.import/mixkit-interface-click-1126.mp3-c4094a62584cfc9c6e2d37de70171bfc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
