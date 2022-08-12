@@ -25,26 +25,26 @@ func _process(delta):
 func initializeUI():
 	#Ensure Game UI stays in first tenth of viewport.
 	var getViewportDimensions = get_viewport().size
-	$Title.rect_size = Vector2(getViewportDimensions.x * 0.3,getViewportDimensions.y * 0.1)
-	$Title/TitleText.rect_size = Vector2(getViewportDimensions.x * 0.3,getViewportDimensions.y * 0.1)
+	$Title.rect_size = Vector2(172,80)
+	$Title/TitleText.rect_size = Vector2(172,80)
 	
 	
-	$Score.rect_position = Vector2(getViewportDimensions.x * 0.5,0)
-	$Score.rect_size = Vector2(getViewportDimensions.x * 0.5,getViewportDimensions.y * 0.05)
-	$Score/ScoreText.rect_size = Vector2(getViewportDimensions.x * 0.5,getViewportDimensions.y * 0.05)
+	$Score.rect_position = Vector2(288,0)
+	$Score.rect_size = Vector2(288,40)
+	$Score/ScoreText.rect_size = Vector2(288,40)
 	
-	$HighScore.rect_position = Vector2(getViewportDimensions.x * 0.5,getViewportDimensions.y * 0.05)
-	$HighScore.rect_size = Vector2(getViewportDimensions.x * 0.5,getViewportDimensions.y * 0.05)
-	$HighScore/HighScoreText.rect_size = Vector2(getViewportDimensions.x * 0.5,getViewportDimensions.y * 0.05)
+	$HighScore.rect_position = Vector2(288,40)
+	$HighScore.rect_size = Vector2(288,40)
+	$HighScore/HighScoreText.rect_size = Vector2(288,40)
 	
-	$Retry.rect_position = Vector2(getViewportDimensions.x * 0.35,0)
-	$Retry.rect_size = Vector2(getViewportDimensions.x * 0.1,getViewportDimensions.y * 0.05)
+	$Retry.rect_position = Vector2(201,0)
+	$Retry.rect_size = Vector2(57,40)
 	
-	$MainMenu.rect_position = Vector2(getViewportDimensions.x * 0.35,getViewportDimensions.y * 0.05)
-	$MainMenu.rect_size = Vector2(getViewportDimensions.x * 0.1,getViewportDimensions.y * 0.05)
+	$MainMenu.rect_position = Vector2(201,40)
+	$MainMenu.rect_size = Vector2(57,40)
 	
-	$Message.rect_position = Vector2(getViewportDimensions.x *0.1,getViewportDimensions.y * 0.1)
-	$Message.rect_size = Vector2(getViewportDimensions.x *0.8, getViewportDimensions.x * 0.8)
+	$Message.rect_position = Vector2(57,80)
+	$Message.rect_size = Vector2(460, 460)
 
 
 func _on_Retry_pressed():
