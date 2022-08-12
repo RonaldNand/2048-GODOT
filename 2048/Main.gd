@@ -31,7 +31,7 @@ func setBGImage():
 	#Pick Random BG Image from Dict, scale it and set it as Background's Texture
 	var BGImage = bgImageDict[(randi() % bgImageDict.size() + 1)]
 	$Background.set_texture(load(BGImage)) 
-	var BGImageSize = get_viewport().size
+	var BGImageSize = Vector2(578,800)
 	var textureSize = $Background.texture.get_size()
 	var factor = BGImageSize/textureSize
 	$Background.scale = factor

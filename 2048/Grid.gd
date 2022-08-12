@@ -67,10 +67,10 @@ func setMeasurements():
 	#Scale Table Positon of Cell Length so it ranges from 10% to 90% of Viewport
 	#regardless of number of cells in table.
 	var viewportSize = get_viewport().size
-	var startX = viewportSize.x * 0.1
-	var startY = viewportSize.y * 0.12
+	var startX = 57
+	var startY = 96
 	var startingPosition = Vector2(startX,startY)
-	cellSize = int ((viewportSize.x * 0.8) / length)
+	cellSize = int ((460) / length)
 	return startingPosition
 	
 
