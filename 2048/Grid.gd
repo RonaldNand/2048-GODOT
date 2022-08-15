@@ -13,6 +13,9 @@ var cellSize
 var score = 0
 var highScore = 0
 
+var swipeOrigin
+var mousePressed = false
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -39,6 +42,41 @@ func startGame():
 	get_tree().paused = false
 
 func get_input():
+	#Get Position of Mouse when pressed
+	if Input.is_mouse_button_pressed(1) && !mousePressed:
+		swipeOrigin = get_viewport().get_mouse_position()
+		mousePressed = true
+	
+	#When Mouse is released after being pressed.
+	if !Input.is_mouse_button_pressed(1) && swipeOrigin != null:
+		
+		#Get Position when mouse released and compare to origin
+		var swipeEnd = get_viewport().get_mouse_position()
+		var swipe = swipeOrigin - swipeEnd
+		print(swipe)
+		
+		#Convert vector x,y, to positive values
+		#IF Y is greater than x, check if swiped up or down and vice versa.
+		if pow(swipe.y,2) > pow(swipe.x,2):
+			#Detect if swipe is up or down using vector y value.
+			if (swipe.y > 0):
+				moveGrid("up")
+				print("up")
+			elif(swipe.y < 0):
+				moveGrid("down")
+				print("down")
+		else:
+			#Detect if swipe is left or right using vector x value
+			if(swipe.x > 0):
+				moveGrid("left")
+				print("left")
+			elif(swipe.x < 0):
+				moveGrid("right")
+				print("right")
+				
+		#Reset so another swipe can be detected.
+		swipeOrigin = null
+		mousePressed = false
 	if (Input.is_action_just_pressed("move_up")):
 		moveGrid("up")
 	if (Input.is_action_just_pressed("move_down")):
@@ -67,10 +105,10 @@ func setMeasurements():
 	#Scale Table Positon of Cell Length so it ranges from 10% to 90% of Viewport
 	#regardless of number of cells in table.
 	var viewportSize = get_viewport().size
-	var startX = 57
-	var startY = 96
+	var startX = 720 * 0.1
+	var startY = 1080 * 0.15
 	var startingPosition = Vector2(startX,startY)
-	cellSize = int ((460) / length)
+	cellSize = int ((720 * 0.8) / length)
 	return startingPosition
 	
 

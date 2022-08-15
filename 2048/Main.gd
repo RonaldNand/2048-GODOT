@@ -24,6 +24,7 @@ var lastTrack
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	randomize()
 	setBGImage()
 	setBGAudio()
 	
@@ -31,7 +32,7 @@ func setBGImage():
 	#Pick Random BG Image from Dict, scale it and set it as Background's Texture
 	var BGImage = bgImageDict[(randi() % bgImageDict.size() + 1)]
 	$Background.set_texture(load(BGImage)) 
-	var BGImageSize = Vector2(578,800)
+	var BGImageSize = Vector2(720,1080)
 	var textureSize = $Background.texture.get_size()
 	var factor = BGImageSize/textureSize
 	$Background.scale = factor

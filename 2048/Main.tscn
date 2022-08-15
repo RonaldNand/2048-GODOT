@@ -8,8 +8,8 @@
 script = ExtResource( 3 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 288, 400 )
-scale = Vector2( 0.105475, 0.0976562 )
+position = Vector2( 360, 540 )
+scale = Vector2( 0.131844, 0.131836 )
 texture = ExtResource( 1 )
 
 [node name="MainMenu" parent="." instance=ExtResource( 4 )]

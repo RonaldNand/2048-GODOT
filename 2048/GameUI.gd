@@ -24,27 +24,29 @@ func _process(delta):
 
 func initializeUI():
 	#Ensure Game UI stays in first tenth of viewport.
-	var getViewportDimensions = get_viewport().size
-	$Title.rect_size = Vector2(172,80)
-	$Title/TitleText.rect_size = Vector2(172,80)
-	
-	
-	$Score.rect_position = Vector2(288,0)
-	$Score.rect_size = Vector2(288,40)
-	$Score/ScoreText.rect_size = Vector2(288,40)
-	
-	$HighScore.rect_position = Vector2(288,40)
-	$HighScore.rect_size = Vector2(288,40)
-	$HighScore/HighScoreText.rect_size = Vector2(288,40)
-	
-	$Retry.rect_position = Vector2(201,0)
-	$Retry.rect_size = Vector2(57,40)
-	
-	$MainMenu.rect_position = Vector2(201,40)
-	$MainMenu.rect_size = Vector2(57,40)
-	
-	$Message.rect_position = Vector2(57,80)
-	$Message.rect_size = Vector2(460, 460)
+#	var titleSizeX = 0.3 * 720
+#	var titleSizeY = 0.1 * 1080
+#
+#	$Title.rect_size = Vector2(titleSizeX ,titleSizeY)
+#	$Title/TitleText.rect_size = Vector2(titleSizeX,titleSizeY)
+#
+#
+#	$Score.rect_position = Vector2(432,0)
+#	$Score.rect_size = Vector2(288,54)
+#	$Score/ScoreText.rect_size = Vector2(288,54)
+#
+#	$HighScore.rect_position = Vector2(432,54)
+#	$HighScore.rect_size = Vector2(288,54)
+#	$HighScore/HighScoreText.rect_size = Vector2(288,54)
+#
+#	$Retry.rect_position = Vector2(201,0)
+#	$Retry.rect_size = Vector2(57,40)
+#
+#	$MainMenu.rect_position = Vector2(201,40)
+#	$MainMenu.rect_size = Vector2(57,40)
+#
+	$Message.rect_position = Vector2(72,129)
+	$Message.rect_size = Vector2(576, 576)
 
 
 func _on_Retry_pressed():

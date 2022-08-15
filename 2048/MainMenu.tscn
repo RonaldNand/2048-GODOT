@@ -17,24 +17,24 @@ margin_bottom = 88.0
 text = "How to Play"
 
 [node name="Play" type="Button" parent="."]
-margin_left = 240.0
+margin_left = 312.0
 margin_top = 32.0
-margin_right = 368.0
+margin_right = 440.0
 margin_bottom = 88.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-margin_left = 432.0
+margin_left = 568.0
 margin_top = 32.0
-margin_right = 560.0
+margin_right = 696.0
 margin_bottom = 88.0
 text = "Quit"
 
 [node name="HowToPlayMessage" type="Label" parent="."]
 margin_left = 64.0
 margin_top = 128.0
-margin_right = 512.0
-margin_bottom = 960.0
+margin_right = 664.0
+margin_bottom = 1048.0
 text = "How to Play:
 
 Press W/A/S/D or Left/Right/Up/Down  to move the numbers on the GRID in that direction.
